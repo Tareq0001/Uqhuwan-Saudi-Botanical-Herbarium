@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>أُقْـحُـوان | معمل التقنية الحيوية النباتية ومستخلصات الفلورا السعودية ثلاثي الأبعاد</title>
+  <meta name="description" content="UQHUWAN - Botanical Biotechnology & Saudi Flora Herbarium 3D by Tareq Abuashi" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Amiri:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="./assets/index-BFugVTI7.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CkkrcN5B.css">
+</head>
+<body>
+  <div id="app-container">
+    <!-- Top Global Navigation Bar -->
+    <header class="top-nav">
+      <div class="brand-section">
+        <div class="brand-logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a9 9 0 0 1 9 9c0 4.97-4.03 9-9 9s-9-4.03-9-9a9 9 0 0 1 9-9z"/>
+            <path d="M12 12c-2.5 0-4.5-2-4.5-4.5S9.5 3 12 3s4.5 2 4.5 4.5S14.5 12 12 12z"/>
+            <path d="M12 12v9"/>
+          </svg>
+        </div>
+        <div class="brand-text-col">
+          <div class="brand-title-row">
+            <span class="brand-title" id="txt-app-title">أُقْـحُـوان</span>
+            <span class="brand-badge">HERBARIUM 3D</span>
+          </div>
+          <span class="brand-sub" id="txt-app-sub">معمل التقنية الحيوية النباتية والفلورا السعودية</span>
+        </div>
+        <div class="owner-lead-credit" id="txt-owner-credit">
+          <span>🌿</span>
+          <span>تصميم وهندسة معمارية النظم: أ. طارق ابوعشي</span>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <nav class="nav-tabs">
+        <button class="nav-tab-btn active" data-tab="herbarium" id="tab-herbarium">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span id="txt-nav-herbarium">المعشبة ثلاثية الأبعاد</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="lab" id="tab-lab">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31L4 19a2 2 0 0 0 1.7 3h12.6a2 2 0 0 0 1.7-3l-6-9.69V2h-4z"/></svg>
+          <span id="txt-nav-lab">معمل الاستخلاص الفيتوكيميائي</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="atlas" id="tab-atlas">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          <span id="txt-nav-atlas">أطلس المناخ والتربة</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="certificate" id="tab-cert">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          <span id="txt-nav-cert">شهادة التحليل المخبري</span>
+        </button>
+      </nav>
+
+      <!-- Right Utility Actions -->
+      <div class="nav-actions">
+        <button class="action-icon-btn" id="btn-sound-toggle" title="صوت الطبيعة والتقطير">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="icon-sound">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+          </svg>
+        </button>
+        <button class="action-icon-btn" id="btn-theme-toggle" title="تبديل النمط اللوني">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+        </button>
+        <button class="btn-lang-toggle" id="btn-lang-toggle">English</button>
+      </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="main-workspace">
+      <!-- Left Specimen Selector Sidebar -->
+      <aside class="specimens-sidebar">
+        <div class="sidebar-header">
+          <span class="sidebar-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span id="txt-sidebar-title">عينات الفلورا السعودية النموذجية</span>
+          </span>
+          <span class="brand-badge">5 Endemic</span>
+        </div>
+        <div class="specimen-cards-scroll" id="specimens-list-container">
+          <!-- Populated dynamically via main.ts -->
+        </div>
+      </aside>
+
+      <!-- Center 3D Viewport Canvas -->
+      <div class="viewport-area">
+        <div id="three-canvas-container"></div>
+
+        <!-- Quick Viewport Camera & Lighting Controls -->
+        <div class="viewport-hud-controls">
+          <button class="hud-btn" id="hud-cam-reset" title="منظر شامل">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+            <span id="txt-hud-reset">منظر شامل</span>
+          </button>
+          <button class="hud-btn" id="hud-cam-macro" title="عدسة الماكرو المقربة للبتلات">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            <span id="txt-hud-macro">عدسة الماكرو</span>
+          </button>
+          <button class="hud-btn" id="hud-cam-canopy" title="منظر التاج">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 22 22 22 12 2"/></svg>
+            <span id="txt-hud-canopy">تاج النبتة</span>
+          </button>
+          <button class="hud-btn" id="hud-cam-stem" title="هيكل الساق">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="2" x2="12" y2="22"/><polyline points="8 10 12 6 16 10"/></svg>
+            <span id="txt-hud-stem">الجذع والساق</span>
+          </button>
+          <button class="hud-btn" id="hud-wireframe-toggle" title="العرض الشبكي الهيكلي">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+            <span id="txt-hud-wireframe">الشبكة الهندسية</span>
+          </button>
+          <button class="hud-btn" id="hud-lighting-toggle" title="أنماط الإضاءة">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            <span id="txt-hud-light">الإضاءة: نهار</span>
+          </button>
+          <button class="hud-btn active" id="hud-autorotate-toggle" title="دوران تلقائي">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+            <span id="txt-hud-orbit">دوران تلقائي</span>
+          </button>
+        </div>
+
+        <!-- Floating Botanical Growth & Blooming Controller HUD -->
+        <div class="growth-hud-panel">
+          <div class="growth-label-col">
+            <span class="growth-hud-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><path d="M12 2a9 9 0 0 1 9 9c0 4.97-4.03 9-9 9s-9-4.03-9-9a9 9 0 0 1 9-9z"/><path d="M12 12v9"/></svg>
+              <span id="txt-growth-label">مرحلة النمو والتفتح العضوي</span>
+            </span>
+            <span class="growth-stage-name" id="txt-growth-stage-name">إزهار واكتمال (100%)</span>
+          </div>
+
+          <div class="growth-slider-box">
+            <input type="range" min="0" max="100" value="100" class="growth-slider" id="growth-slider" />
+            <div class="growth-ticks-row">
+              <span id="txt-tick-sprout">إنبات مبكر (0%)</span>
+              <span id="txt-tick-budding">تبرعم وتفرع (50%)</span>
+              <span id="txt-tick-bloom">إزهار كامل (100%)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Collapsible Specimen Dossier Panel -->
+      <aside class="specimen-dossier-panel" id="specimen-dossier">
+        <!-- Populated dynamically via main.ts -->
+      </aside>
+    </main>
+
+    <!-- EXTRACTION SIMULATOR FULL MODAL VIEW -->
+    <div class="full-modal-overlay hidden" id="modal-lab">
+      <div class="modal-content-container">
+        <div class="modal-header-row">
+          <div class="modal-header-col">
+            <h2 class="modal-title" id="txt-sim-title">محاكي الاستخلاص الفيتوكيميائي فائق الدقة</h2>
+            <span class="modal-sub" id="txt-sim-sub">معايرة المعايير الترموديناميكية لاستخلاص الزيوت العطرية والمركبات الفعالة</span>
+          </div>
+          <button class="action-icon-btn btn-modal-close" data-close="modal-lab">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+
+        <div class="sim-grid-layout">
+          <!-- Parameter Sliders Card -->
+          <div class="sim-controls-card">
+            <div class="param-group">
+              <label class="param-header-row">
+                <span id="txt-param-method">تقنية الاستخلاص</span>
+              </label>
+              <select id="sim-method-select" class="nav-tab-btn" style="background: rgba(6,78,59,0.8); border: 1px solid var(--border-glass); color: #fff; width: 100%;">
+                <option value="supercritical_co2">استخلاص ثنائي أكسيد الكربون فوق الحرج (scCO₂)</option>
+                <option value="steam">التقطير المائي بالبخار الحيوي (Steam Distillation)</option>
+              </select>
+            </div>
+
+            <div class="param-group">
+              <div class="param-header-row">
+                <span id="txt-param-temp">درجة الحرارة</span>
+                <span class="param-val-badge" id="lbl-param-temp">42 °C</span>
+              </div>
+              <input type="range" min="30" max="115" value="42" class="param-range-input" id="range-temp" />
+            </div>
+
+            <div class="param-group">
+              <div class="param-header-row">
+                <span id="txt-param-press">ضغط الحجرة الموصدة</span>
+                <span class="param-val-badge" id="lbl-param-press">220 Bar</span>
+              </div>
+              <input type="range" min="1" max="350" value="220" class="param-range-input" id="range-press" />
+            </div>
+
+            <div class="param-group">
+              <div class="param-header-row">
+                <span id="txt-param-duration">زمن دورة الاستخلاص</span>
+                <span class="param-val-badge" id="lbl-param-duration">45 دقيقة</span>
+              </div>
+              <input type="range" min="15" max="180" value="45" class="param-range-input" id="range-duration" />
+            </div>
+
+            <div class="param-group">
+              <div class="param-header-row">
+                <span id="txt-param-mass">كتلة العينة النباتية</span>
+                <span class="param-val-badge" id="lbl-param-mass">5.0 كجم</span>
+              </div>
+              <input type="range" min="0.5" max="25" step="0.5" value="5" class="param-range-input" id="range-mass" />
+            </div>
+
+            <button class="sim-btn-run" id="btn-run-simulation">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span id="txt-btn-simulate">بدء دورة الاستخلاص والتحليل</span>
+            </button>
+          </div>
+
+          <!-- Live Extraction Diagnostics & GC-MS -->
+          <div class="sim-diagnostics-col">
+            <div class="kpi-cards-grid">
+              <div class="kpi-card">
+                <span class="kpi-card-title" id="txt-kpi-yield">حجم الزيت المستخلص</span>
+                <span class="kpi-card-value" id="kpi-yield-val">0.00 <small>ml</small></span>
+              </div>
+              <div class="kpi-card">
+                <span class="kpi-card-title" id="txt-kpi-purity">مؤشر النقاوة</span>
+                <span class="kpi-card-value" id="kpi-purity-val">0.0 <small>%</small></span>
+              </div>
+              <div class="kpi-card">
+                <span class="kpi-card-title" id="txt-kpi-terpene">سلامة التربينات</span>
+                <span class="kpi-card-value" id="kpi-terpene-val">0.0 <small>%</small></span>
+              </div>
+              <div class="kpi-card">
+                <span class="kpi-card-title" id="txt-kpi-grade">الرتبة الصيدلانية</span>
+                <span class="kpi-card-value" style="font-size: 0.95rem; color: var(--accent-gold);" id="kpi-grade-val">جاهز للفحص</span>
+              </div>
+            </div>
+
+            <!-- GC-MS Spectrometry Chromatogram -->
+            <div class="mass-spec-card">
+              <div class="modal-header-row" style="padding-bottom: 8px;">
+                <span class="dossier-sec-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                  <span id="txt-gcms-title">مطيافية الكتلة وكروماتوغرافيا الغاز (GC-MS)</span>
+                </span>
+                <span class="param-val-badge" id="txt-gcms-batch">BATCH READY</span>
+              </div>
+              <canvas id="canvas-mass-spec" class="mass-spec-canvas" width="800" height="260"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SAUDI TERROIR ATLAS FULL MODAL VIEW -->
+    <div class="full-modal-overlay hidden" id="modal-atlas">
+      <div class="modal-content-container">
+        <div class="modal-header-row">
+          <div class="modal-header-col">
+            <h2 class="modal-title" id="txt-atlas-title">أطلس النظم البيئية والجغرافيا الحيوية للفلورا السعودية</h2>
+            <span class="modal-sub" id="txt-atlas-sub">ارتباط الارتفاع الشاهق والتربة والمناخ بتركيز المركبات الفعالة</span>
+          </div>
+          <button class="action-icon-btn btn-modal-close" data-close="modal-atlas">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+
+        <div class="terroir-cards-grid" id="terroir-cards-container">
+          <!-- Populated dynamically via main.ts -->
+        </div>
+      </div>
+    </div>
+
+    <!-- CERTIFICATE MODAL CONTAINER -->
+    <div id="certificate-modal-mount"></div>
+  </div>
+
+</body>
+</html>
